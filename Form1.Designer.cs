@@ -184,6 +184,7 @@
             this.btn_Ascendente.TabIndex = 4;
             this.btn_Ascendente.Text = "Ascendente";
             this.btn_Ascendente.UseVisualStyleBackColor = true;
+            this.btn_Ascendente.Click += new System.EventHandler(this.btn_Ascendente_Click);
             // 
             // btn_Descendente
             // 
@@ -193,6 +194,7 @@
             this.btn_Descendente.TabIndex = 5;
             this.btn_Descendente.Text = "Descendete";
             this.btn_Descendente.UseVisualStyleBackColor = true;
+            this.btn_Descendente.Click += new System.EventHandler(this.btn_Descendente_Click);
             // 
             // groupBox4
             // 

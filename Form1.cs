@@ -77,6 +77,26 @@ namespace Lista_De_Numeros
                 MessageBox.Show("¡El numero que ha ingresado no existe en la lista!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             txt_eliminar.Text = string.Empty;
         }
+        //Funcion para ordenar de forma ascendente
+        private void btn_Ascendente_Click(object sender, EventArgs e)
+        {
+            OrdenarAscendente(numeros);
+            list_Numeros.Items.Clear();
+            foreach(int elemento in numeros)
+            {
+                list_Numeros.Items.Add(elemento.ToString());
+            }
+        }
+        //Funcion para ordenar de forma descendente
+        private void btn_Descendente_Click(object sender, EventArgs e)
+        {
+            OrdenarDescendente(numeros);
+            list_Numeros.Items.Clear();
+            foreach (int elemento in numeros)
+            {
+                list_Numeros.Items.Add(elemento.ToString());
+            }
+        }
 
         //Funcion de busqueda usando el metodo de recursividad
         private void BuscarNumero(int num, int i)
@@ -94,6 +114,15 @@ namespace Lista_De_Numeros
                 else
                     MessageBox.Show("¡El numero que ha ingresado no existe en la lista!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+        private void OrdenarAscendente(List<int> lista)
+        {
+            lista.Sort();
+        }
+        private void OrdenarDescendente(List<int> lista)
+        {
+            lista.Sort();
+            lista.Reverse();
         }
     }
 }
