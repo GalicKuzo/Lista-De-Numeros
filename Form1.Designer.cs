@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.list_Numeros = new System.Windows.Forms.ListBox();
+            this.txt_insertar = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_Insertar = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_eliminar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btn_Eliminar = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_buscar = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btn_Buscar = new System.Windows.Forms.Button();
+            this.list_Numeros = new System.Windows.Forms.ListBox();
             this.btn_Ascendente = new System.Windows.Forms.Button();
             this.btn_Descendente = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_insertar = new System.Windows.Forms.TextBox();
-            this.txt_eliminar = new System.Windows.Forms.TextBox();
-            this.txt_buscar = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -62,6 +62,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Insertar";
             // 
+            // txt_insertar
+            // 
+            this.txt_insertar.Location = new System.Drawing.Point(85, 45);
+            this.txt_insertar.Name = "txt_insertar";
+            this.txt_insertar.Size = new System.Drawing.Size(255, 27);
+            this.txt_insertar.TabIndex = 2;
+            this.txt_insertar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_insertar_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Numero";
+            // 
+            // btn_Insertar
+            // 
+            this.btn_Insertar.Location = new System.Drawing.Point(31, 90);
+            this.btn_Insertar.Name = "btn_Insertar";
+            this.btn_Insertar.Size = new System.Drawing.Size(290, 36);
+            this.btn_Insertar.TabIndex = 0;
+            this.btn_Insertar.Text = "Insertar";
+            this.btn_Insertar.UseVisualStyleBackColor = true;
+            this.btn_Insertar.Click += new System.EventHandler(this.btn_Insertar_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txt_eliminar);
@@ -73,6 +100,33 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eliminar";
+            // 
+            // txt_eliminar
+            // 
+            this.txt_eliminar.Location = new System.Drawing.Point(85, 46);
+            this.txt_eliminar.Name = "txt_eliminar";
+            this.txt_eliminar.Size = new System.Drawing.Size(255, 27);
+            this.txt_eliminar.TabIndex = 3;
+            this.txt_eliminar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_eliminar_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Numero";
+            // 
+            // btn_Eliminar
+            // 
+            this.btn_Eliminar.Location = new System.Drawing.Point(31, 94);
+            this.btn_Eliminar.Name = "btn_Eliminar";
+            this.btn_Eliminar.Size = new System.Drawing.Size(290, 36);
+            this.btn_Eliminar.TabIndex = 1;
+            this.btn_Eliminar.Text = "Eliminar";
+            this.btn_Eliminar.UseVisualStyleBackColor = true;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // groupBox3
             // 
@@ -86,33 +140,22 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscar";
             // 
-            // list_Numeros
+            // txt_buscar
             // 
-            this.list_Numeros.FormattingEnabled = true;
-            this.list_Numeros.ItemHeight = 20;
-            this.list_Numeros.Location = new System.Drawing.Point(12, 12);
-            this.list_Numeros.Name = "list_Numeros";
-            this.list_Numeros.Size = new System.Drawing.Size(414, 404);
-            this.list_Numeros.TabIndex = 3;
+            this.txt_buscar.Location = new System.Drawing.Point(85, 46);
+            this.txt_buscar.Name = "txt_buscar";
+            this.txt_buscar.Size = new System.Drawing.Size(255, 27);
+            this.txt_buscar.TabIndex = 4;
+            this.txt_buscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_buscar_KeyPress);
             // 
-            // btn_Insertar
+            // label3
             // 
-            this.btn_Insertar.Location = new System.Drawing.Point(31, 90);
-            this.btn_Insertar.Name = "btn_Insertar";
-            this.btn_Insertar.Size = new System.Drawing.Size(290, 36);
-            this.btn_Insertar.TabIndex = 0;
-            this.btn_Insertar.Text = "Insertar";
-            this.btn_Insertar.UseVisualStyleBackColor = true;
-            this.btn_Insertar.Click += new System.EventHandler(this.btn_Insertar_Click);
-            // 
-            // btn_Eliminar
-            // 
-            this.btn_Eliminar.Location = new System.Drawing.Point(31, 94);
-            this.btn_Eliminar.Name = "btn_Eliminar";
-            this.btn_Eliminar.Size = new System.Drawing.Size(290, 36);
-            this.btn_Eliminar.TabIndex = 1;
-            this.btn_Eliminar.Text = "Eliminar";
-            this.btn_Eliminar.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Numero";
             // 
             // btn_Buscar
             // 
@@ -122,6 +165,16 @@
             this.btn_Buscar.TabIndex = 2;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            // 
+            // list_Numeros
+            // 
+            this.list_Numeros.FormattingEnabled = true;
+            this.list_Numeros.ItemHeight = 20;
+            this.list_Numeros.Location = new System.Drawing.Point(12, 12);
+            this.list_Numeros.Name = "list_Numeros";
+            this.list_Numeros.Size = new System.Drawing.Size(414, 404);
+            this.list_Numeros.TabIndex = 3;
             // 
             // btn_Ascendente
             // 
@@ -151,57 +204,6 @@
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ordenar";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Numero";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Numero";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Numero";
-            // 
-            // txt_insertar
-            // 
-            this.txt_insertar.Location = new System.Drawing.Point(85, 45);
-            this.txt_insertar.Name = "txt_insertar";
-            this.txt_insertar.Size = new System.Drawing.Size(255, 27);
-            this.txt_insertar.TabIndex = 2;
-            this.txt_insertar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_insertar_KeyPress);
-            // 
-            // txt_eliminar
-            // 
-            this.txt_eliminar.Location = new System.Drawing.Point(85, 46);
-            this.txt_eliminar.Name = "txt_eliminar";
-            this.txt_eliminar.Size = new System.Drawing.Size(255, 27);
-            this.txt_eliminar.TabIndex = 3;
-            this.txt_eliminar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_eliminar_KeyPress);
-            // 
-            // txt_buscar
-            // 
-            this.txt_buscar.Location = new System.Drawing.Point(85, 46);
-            this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(255, 27);
-            this.txt_buscar.TabIndex = 4;
-            this.txt_buscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_buscar_KeyPress);
             // 
             // Form1
             // 
